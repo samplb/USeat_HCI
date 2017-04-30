@@ -16,9 +16,23 @@
 
 
 <ion-content class="menu-content" padding>
-    <ion-list class="list">
+    <ion-list class="list" style="text-align:center;">
+        
+        <button ion-button (click)="openReservierung()">
+            Reservierung
+    </button><br>
+        <button ion-button (click)="openBelegung()">
+            Belegung
+    </button><br>
+        <button ion-button (click)="openQrCode()">
+            Qr-Code
+    </button><br>
+        <button ion-button (click)="openImpressum()">
+            Impressum
+    </button><br>
         <button ion-button (click)="openAbout()">
-  About
-</button>
+            About
+    </button><br>
+    
   </ion-list>
 </ion-content>

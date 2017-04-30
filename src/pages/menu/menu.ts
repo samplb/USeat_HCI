@@ -31,17 +31,22 @@ export class Menu {
   openAbout() {
       this.navCtrl.push('About');
   }
-  itemTapped(event, item) {
-    // That's right, we're pushing to ourselves!
-    this.navCtrl.push('Welcome', {
-      item: item
-    });
-    console.log('push');
+  openImpressum() {
+      this.navCtrl.push('Impressum');
+  }
+  openReservierung() {
+      this.navCtrl.push('Reservierung');
+  }
+  openBelegung() {
+      this.navCtrl.push('Belegung');
+  }
+  openQrCode() {
+      this.navCtrl.push('QrCode');
   }
   
   
   ionViewDidLoad() {
-    console.log('ionViewDidLoad Menu');
+      console.log('ionViewDidLoad Menu');
   }
   ionViewDidExit() {
       console.log('Menu exit');
