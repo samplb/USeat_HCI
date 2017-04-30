@@ -8,3 +8,4 @@
 <h1> Anmerkungen: </h1>
 <p> Root wieder auf Login setzen, derzeit wegen einfachheit auf Menu </p
 <p> Welcome einrichten? </p>
+<p> Nutzername: guest ; PW: guest; </p>
