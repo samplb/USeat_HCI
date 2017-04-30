@@ -28,6 +28,9 @@ export class Menu {
       console.log('Menu Logout');
     });
   }
+  openSettings() {
+      this.navCtrl.push('Settings');
+  }
   openAbout() {
       this.navCtrl.push('About');
   }
