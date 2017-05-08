@@ -4,6 +4,7 @@
 <p>"npm install -g ionic"</p>
 <p>"npm install -g cordova"</p>
 <p> ionic platform add android </p>
+<p> cordova plugin add cordova-sqlite-storage --save </p>
 <p> ionic serve --lab <p>
 <p>Installiert und testen auf Androiddevice. geht schneller als Emulator</p>
 <h1> Anmerkungen: </h1>
