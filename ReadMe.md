@@ -2,6 +2,7 @@
 <p>Oeffne Konsole in Verzeichnis</p>
 <p>"npm install"</p>
 <p>"npm install -g ionic"</p>
+<p>"npm install -g cordova"</p>
 <p> ionic platform add android </p>
 <p> ionic serve --lab <p>
 <p>Installiert und testen auf Androiddevice. geht schneller als Emulator</p>

@@ -19,22 +19,28 @@
     <p>Speicherung der Sitzplatzinfos in zentraler DB, siehe Reservierung. Farbdesign im .scss von Login</p>
     <ion-list class="list" style="text-align:center;">
         
-        <button ion-button (click)="openReservierung()">
+        <button ion-button icon-left (click)="openReservierung()">
+                <ion-icon name="time"></ion-icon>
             Reservierung
     </button><br>
-        <button ion-button (click)="openBelegung()">
+        <button ion-button icon-left (click)="openBelegung()">
+                <ion-icon name="stats"></ion-icon>
             Belegung
     </button><br>
-        <button ion-button (click)="openQrCode()">
+        <button ion-button icon-left (click)="openQrCode()">
+                <ion-icon ios="ios-qr-scanner" md="md-qr-scanner"></ion-icon>
             QR-Code
     </button><br>
-        <button ion-button (click)="openSettings()">
+        <button ion-button icon-left (click)="openSettings()">
+                <ion-icon name="settings"></ion-icon>
             Settings
     </button><br>
-        <button ion-button (click)="openImpressum()">
-            Impressum
+        <button ion-button icon-left (click)="openImpressum()">
+                <ion-icon name="person"></ion-icon>
+                Impressum
     </button><br>
-        <button ion-button (click)="openAbout()">
+        <button ion-button icon-left (click)="openAbout()">
+                 <ion-icon ios="ios-information-circle" md="md-information-circle"></ion-icon>
             About
     </button><br>
     
