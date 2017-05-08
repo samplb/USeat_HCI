@@ -2,6 +2,9 @@ page-menu {
     .toolbar-background{
         background-color: #0972a5;
     }
+    .toolbar-title{
+       color: white;
+    }
     .menu-content {
         background-color: #ffffff;
     }
@@ -24,5 +27,8 @@ page-menu {
     }
     .menu-nav{
         background-color: #8df000;
+    }
+    .logout{
+        color: red;  
     }
 }
