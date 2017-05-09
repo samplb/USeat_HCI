@@ -14,16 +14,16 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
   templateUrl: 'qr-code.html',
 })
 export class QrCode {
+    qrinfo:string;
 
   constructor(private scanner:BarcodeScanner, public navCtrl: NavController, public navParams: NavParams) {
-     this.scan();
-      
+      this.qrinfo='Still empty';
   }
   
   scan() {
       this.scanner.scan().then((barcodeData) => {
-          console.log(barcodeData);
-      
+          console.log(barcodeData.text);
+          this.qrinfo=barcodeData.text;
       })
   }
 

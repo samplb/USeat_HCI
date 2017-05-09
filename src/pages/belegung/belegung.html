@@ -12,8 +12,65 @@
 
 </ion-header>
 
+<ion-content no-bounce>
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager>
+    <ion-slide>
+        <h3>Fakultät:</h3>
+        <ion-card>
+            <ion-card-content>
+                <canvas #doughnutCanvas_Ges></canvas>
+            </ion-card-content>
+        </ion-card>
+        <h2>Werte</h2>
+        <h6>Gesamtanzahl:  {{this.sumup_Ges}}</h6>
+        <h6>Freie Plätze: {{this.free_slots_Ges}}</h6> 
+    </ion-slide>
 
-<ion-content padding>
+    <ion-slide>
+        <h3>OG 1:</h3>
+        <ion-card>
+            <ion-card-content>
+                <canvas #doughnutCanvas_Og1></canvas>
+            </ion-card-content>
+        </ion-card>
+        <h2>Werte</h2>
+        <h6>Gesamtanzahl:  {{this.sumup_Og1}}</h6>
+        <h6>Freie Plätze: {{this.free_slots_Og1}}</h6> 
+    </ion-slide>
+
+    <ion-slide>
+        <h3>OG 2:</h3>
+        <ion-card>
+            <ion-card-content>
+                <canvas #doughnutCanvas_Og2></canvas>
+            </ion-card-content>
+        </ion-card>
+        <h2>Werte</h2>
+        <h6>Gesamtanzahl:  {{this.sumup_Og2}}</h6>
+        <h6>Freie Plätze: {{this.free_slots_Og2}}</h6> 
+    </ion-slide>
+
+    <ion-slide>
+        <h3>Bibliothek:</h3>
+        <ion-card>
+            <ion-card-content>
+                <canvas #doughnutCanvas_Bib></canvas>
+            </ion-card-content>
+        </ion-card>
+        <h2>Werte</h2>
+        <h6>Gesamtanzahl:  {{this.sumup_Bib}}</h6>
+        <h6>Freie Plätze: {{this.free_slots_Bib}}</h6> 
+      <button ion-button icon-right large clear (click)="backToMenu()">
+          Back
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>
+
+
+<!--ion-content padding>
     <h3>Platzverteilung:</h3>
     <ion-card>
       <ion-card-content>
@@ -24,4 +81,4 @@
     <h6>Gesamtanzahl:  {{this.sumup}}</h6>
     <h6>Freie Plätze: {{this.free_slots}}</h6> 
 
-</ion-content>
+</ion-content-->

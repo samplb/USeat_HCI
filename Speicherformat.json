@@ -1,0 +1,78 @@
+{
+"free_timeslots":{
+	"0700":{
+		"place":{
+			"name":"og1_21",
+			"free_spaces":4,
+			"location":"1.Stock vor SR6",
+			"user":null
+		}
+		"place":{
+			"name":"og1_22",
+			"free_spaces":4,
+			"location":"1.Stock vor SR6",
+			"user":null
+		}
+		"place":{
+			"name":"og1_23",
+			"free_spaces":4,
+			"location":"1.Stock vor SR6",
+			"user":null
+		}
+		"place":{
+			"name":"og1_24",
+			"free_spaces":4,
+			"location":"1.Stock vor SR6",
+			"user":null
+		}
+	}
+	"0730":{
+		"place":{
+			"name":"og1_21",
+			"free_spaces":4,
+			"location":"1.Stock vor SR6",
+			"user":null
+		}
+		
+	}
+	
+	"2200":{
+		"place":{
+			"name":"og1_21",
+			"free_spaces":4,
+			"location":"1.Stock vor SR6",
+			"user":null
+		}
+		
+	},
+"reserved_timeslots":{
+	"0700":{
+		"place":{
+			"name":"og2_21",
+			"free_spaces":4,
+			"location":"1.Stock vor SR6",
+			"user":"guest"
+		}
+		
+	}
+	"0730":{
+		"place":{
+			"name":"og2_21",
+			"free_spaces":4,
+			"location":"1.Stock vor SR6",
+			"user":"guest"
+		}
+		
+	}
+	
+	"2200": null
+		
+	},
+	
+"used_timeslots":null,
+"timeslots_used":500,
+"timeslots_ges":600,
+"timeslots_res":100,
+}
+
+	

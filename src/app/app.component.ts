@@ -9,7 +9,7 @@ import { Storage } from '@ionic/storage';
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  rootPage:any = 'Menu';
+  rootPage:any = 'Login';
   pages: Array<{title: string, component: any}>;
 
   constructor(storage: Storage, platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {

@@ -15,7 +15,14 @@
 
 <ion-content padding>
     <ion-icon name="checkmark-circle"></ion-icon>
-    <p>Qr Code einlesen. </p>
+    <p>Qr Code einlesen: </p>
+    
+    <button ion-button icon-left class="QR" (click)="scan()">
+                <ion-icon ios="ios-qr-scanner" md="md-qr-scanner"></ion-icon>
+             
+    </button><br>
+    <p>QR Inhalt:</p>
+    <p>{{qrinfo}}</p>
     <p>Beispiele:<br>  <a href="https://github.com/EddyVerbruggen/nativescript-barcodescanner">Github example</a><br> <a href="https://ionicframework.com/docs/native/barcode-scanner/">Ionic Framework QR-Plugin</a></p>
 	<p>Schritt fuer schritt anleitung: <a href="https://www.thepolyglotdeveloper.com/2016/02/add-barcode-scanning-functionality-to-your-ionic-2-app/">Tutorial</a></p>
 </ion-content>
