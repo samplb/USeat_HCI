@@ -23,35 +23,7 @@ export class Reservierung {
      * Bei dem Storage, den ich derzeit nutze gibt es nur key, value paare, daher würd sich JSON anbieten
      * unten beispielJSON Syntax, meine Idee wäre halt das Format, wer eine bessere Idee hat bitte sagen.
      * --------------------------------------------------
-     * {
-     * "free_timeslots":{
-     *      "0700":{
-     *          "name":["og1_22", "og1_23", "og1_24", ...]
-     *          }
-     *      "0730":{
-     *          "name":["og1_22", "og1_23", "og1_24", ...]
-     *          }
-     *          ...
-     *      }
-     * "reserved_timeslots":{
-     *      "0700":{
-     *          "name":["og1_22_1","og1_22_2","og1_22_3","og1_22_4", "og1_23_2", "og1_24_1", ...]
-     *          }
-     *      "0730":{
-     *          "name":["og1_22_1","og1_22_2","og1_22_3","og1_22_4", "og1_23_2", "og1_24_1", ...]
-     *          }
-     *          ...
-     *      }
-     * "used_timeslots":{
-     *      "0700":{
-     *          "name":["og1_22_1","og1_22_2","og1_22_3","og1_22_4", "og1_23_2", "og1_24_1", ...]
-     *          }
-     *      "0730":{
-     *          "name":["og1_22_1","og1_22_2","og1_22_3","og1_22_4", "og1_23_2", "og1_24_1", ...]
-     *          }
-     *          ...
-     *      }
-     * }
+     * siehe beispielsweise Speicherofrmat.json
      * --------------------------------------------------
      *  
      *  oder wir speichern jeden Sitz als objekt mit den Infos zu den freien Timeslots als Array.
