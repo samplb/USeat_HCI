@@ -5,5 +5,38 @@ page-qr-code {
     .toolbar-title{
        color: white;
     }
+    .QRButton{
+        background-color: #0972a5;
+        padding-left: 40px;
+        padding-right: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-width: 8px;
+        border-color: #8df000;
+        font-size: 30px;
+    }
+    .QRdiv{
+        text-align: center;
+    }
+    .Bestaetigen{
+        text-align: center;
+    }
+    .Reservieren{
+        text-align: center;
+    }
+    .ReservierenB{
+        background-color: #0972a5;
+        border-width: 4px;
+        border-color: #8df000;
+    }
+    .BestaetigenB{
+        background-color: #0972a5;
+        border-width: 4px;
+        border-color: #8df000;
+    }
+    h1 {
+        text-align:  center;
+    }
 
 }
+

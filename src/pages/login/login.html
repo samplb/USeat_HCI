@@ -13,7 +13,7 @@
     <form (ngSubmit)="login()" #registerForm="ngForm">
       <ion-row>
         <ion-col>
-          <ion-list inset>
+          <ion-list class="login-fields" inset>
             
             <ion-item>
               <ion-input type="text" placeholder="Username" name="username" [(ngModel)]="registerCredentials.username" required></ion-input>

@@ -6,8 +6,7 @@ import { Storage } from '@ionic/storage';
 /**
  * Generated class for the Reservierung page.
  *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
+ * http://ionicframework.com/docs/components/#datetime
  */
 @IonicPage()
 @Component({
@@ -15,6 +14,7 @@ import { Storage } from '@ionic/storage';
   templateUrl: 'reservierung.html',
 })
 export class Reservierung {
+    //siehe link oben.
     name:string;
     val:number;
     

@@ -4,8 +4,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 /**
  * Generated class for the Settings page.
  *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
+ * https://ionicframework.com/docs/components/#toggle
+ * https://ionicframework.com/docs/components/#range
  */
 @IonicPage()
 @Component({
@@ -15,6 +15,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class Settings {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+      //siehe kommentar link.
   }
 
   ionViewDidLoad() {

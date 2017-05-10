@@ -8,9 +8,10 @@
 <p> "npm install chart.js --save" </p>
 <p> "ionic plugin add phonegap-plugin-barcodescanner"</p>
 <p> "ionic serve --lab" <p>
-<p>Installiert und testen auf Androiddevice. geht schneller als Emulator</p>
+<p> Beispiel QR-Code von http://goqr.me/de/ im Projektordner gespeichert mit Text: "og1_22"</p>
 <h1> Anmerkungen: </h1>
-<!--p> Root wieder auf Login setzen, derzeit wegen einfachheit auf Menu </p-->
+<p> Root wieder auf Login setzen, derzeit wegen einfachheit auf Menu </p>
 <p> Welcome einrichten? </p>
 <p> Nutzername: guest ; PW: guest; </p>
+<p> überschreiben von this.qrinfo in qr-code.scan() läschen, da nur für testzwecke.
 <p> Ideensammlung GIT: https://github.com/driftyco/ionic-conference-app</p>

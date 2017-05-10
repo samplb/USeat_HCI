@@ -22,8 +22,14 @@
             </ion-card-content>
         </ion-card>
         <h2>Werte</h2>
-        <h6>Gesamtanzahl:  {{this.sumup_Ges}}</h6>
-        <h6>Freie Plätze: {{this.free_slots_Ges}}</h6> 
+        <ion-item color="primary">
+        <h6>Gesamtanzahl:</h6>
+        <ion-badge class="x" item-right>{{this.sumup_Ges}}</ion-badge>
+        </ion-item >
+        <ion-item color="primary">
+        <h6>Freie Plätze:</h6>
+        <ion-badge class="x" item-right>{{this.free_slots_Ges}}</ion-badge>
+        </ion-item>
     </ion-slide>
 
     <ion-slide>
@@ -34,8 +40,14 @@
             </ion-card-content>
         </ion-card>
         <h2>Werte</h2>
-        <h6>Gesamtanzahl:  {{this.sumup_Og1}}</h6>
-        <h6>Freie Plätze: {{this.free_slots_Og1}}</h6> 
+        <ion-item color="primary">
+        <h6>Gesamtanzahl:</h6>
+        <ion-badge  class="x" item-right>{{this.sumup_Og1}}</ion-badge>
+        </ion-item>
+        <ion-item color="primary">
+        <h6>Freie Plätze:</h6> 
+        <ion-badge  class="x" item-right>{{this.free_slots_Og1}}</ion-badge>
+        </ion-item>
     </ion-slide>
 
     <ion-slide>
@@ -46,8 +58,14 @@
             </ion-card-content>
         </ion-card>
         <h2>Werte</h2>
-        <h6>Gesamtanzahl:  {{this.sumup_Og2}}</h6>
-        <h6>Freie Plätze: {{this.free_slots_Og2}}</h6> 
+        <ion-item color="primary">
+        <h6>Gesamtanzahl:</h6>
+        <ion-badge  class="x" item-right>{{this.free_slots_Og2}}</ion-badge>
+        </ion-item>
+        <ion-item color="primary">
+        <h6>Freie Plätze:</h6> 
+        <ion-badge  class="x" item-right>{{this.free_slots_Og2}}</ion-badge>
+        </ion-item>
     </ion-slide>
 
     <ion-slide>
@@ -58,12 +76,18 @@
             </ion-card-content>
         </ion-card>
         <h2>Werte</h2>
-        <h6>Gesamtanzahl:  {{this.sumup_Bib}}</h6>
-        <h6>Freie Plätze: {{this.free_slots_Bib}}</h6> 
-      <button ion-button icon-right large clear (click)="backToMenu()">
+        <ion-item color="primary">
+        <h6>Gesamtanzahl:</h6>
+        <ion-badge  class="x" item-right>{{this.sumup_Bib}}</ion-badge>
+        </ion-item>
+        <ion-item color="primary">
+        <h6>Freie Plätze:</h6>
+        <ion-badge  class="x" item-right>{{this.free_slots_Bib}}</ion-badge> 
+        </ion-item>
+      <!--button class="back" ion-button icon-right large clear (click)="backToMenu()">
           Back
-        <ion-icon name="arrow-forward"></ion-icon>
-      </button>
+        <ion-icon name="arrow-dropleft-circle"></ion-icon>
+      </button-->
     </ion-slide>
 
   </ion-slides>

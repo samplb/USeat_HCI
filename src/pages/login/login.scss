@@ -28,16 +28,20 @@ page-login {
          border: 3px solid #000000;
          border-bottom: 0px !important;
          box-shadow: none !important;
+         background-color: #000000;
      }
  
      .signup-col {
-       margin: 0px 16px 0px 16px;
+         border-top-color: #000000;
+       margin: 2px 16px 0px 16px;
        padding-bottom: 20px;
        background-color: #ffffff;//grün
+       border-color: #000000;
      }
  
      .item-inner {
-       border-bottom-color: #ffffff !important;
+       border-bottom-color: #000000 !important;
+       border-top-color: #000000;
        box-shadow: none !important;
      }
  
