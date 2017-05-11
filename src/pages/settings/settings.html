@@ -15,4 +15,27 @@
 
 <ion-content padding>
     <p>Settings...</p>
+
+    <ion-list>
+        <ion-item>
+            <ion-label>Sprache</ion-label>
+            <ion-select [(ngModel)]="sprache">
+                <ion-option value="d">Deutsch</ion-option>
+                <ion-option value="e">Englisch</ion-option>
+                <ion-option value="i">Italienisch</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label> Sichtbarkeit</ion-label>
+            <ion-toggle checked="true"></ion-toggle>
+        </ion-item>
+        <ion-item>
+            <ion-label> Energiesparmodus</ion-label>
+            <ion-toggle checked="false"></ion-toggle>
+        </ion-item>
+        <ion-item>
+            <ion-label> Benachrichtigungen</ion-label>
+            <ion-toggle checked="true"></ion-toggle>
+        </ion-item>
+    </ion-list>
 </ion-content>

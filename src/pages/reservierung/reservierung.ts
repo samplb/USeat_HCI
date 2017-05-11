@@ -61,5 +61,8 @@ export class Reservierung {
       
     console.log('ionViewDidLoad Reservierung');
   }
+    openSearch() {
+        this.navCtrl.push('Search');
+    }
 
 }

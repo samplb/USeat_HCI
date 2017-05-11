@@ -14,8 +14,22 @@
 
 
 <ion-content padding>
-    <p>Reservierung. Ideal wäre Modular. sprich mit der option, für mehr als 1 person zu reservieren. d.h. eine Abfrage, wo genau X(hier 1) plätze frei sind. dann könnten wir die Gruppenoption noch machen wenns wäre
-        Außer der Aufwand zahlt sich absolut nicht aus, ich würde sagen das entscheidet der, ders machen muss xD</p>
-    <h3>Ionic service:</h3><br>
-    <a href="https://ionicframework.com/docs/storage/">Ionic Storage</a>
+    <ion-item>
+        <ion-label>Datum</ion-label>
+        <ion-datetime displayFormat=" DD. MMMM" pickerFormat=" DD MMMM"></ion-datetime>
+
+    </ion-item>
+    <ion-item>
+        <ion-label>Startzeit</ion-label>
+
+        <ion-datetime displayFormat=" HH:mm" pickerFormat=" HH mm"></ion-datetime>
+    </ion-item>
+    <ion-item>
+        <ion-label>Endzeit</ion-label>
+
+        <ion-datetime displayFormat=" HH:mm" pickerFormat=" HH mm"></ion-datetime>
+    </ion-item>
+
+    <button ion-button full icon-left (click)="openSearch()">Suchen</button>
+
 </ion-content>

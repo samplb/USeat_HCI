@@ -9,7 +9,7 @@ import { Storage } from '@ionic/storage';
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  rootPage:any = 'Menu';
+  rootPage:any = 'Login';
   pages: Array<{title: string, component: any}>;
 
   constructor(storage: Storage, platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
@@ -51,7 +51,10 @@ export class MyApp {
       { title: 'QR-Code', component: 'QrCode' },
       { title: 'Settings', component: 'Settings' },
       { title: 'Impressum', component: 'Impressum' },
-      { title: 'About', component: 'About' }
+      { title: 'About', component: 'About' },
+        { title: 'Search', component: 'Search' },
+        { title: 'EndePage', component: 'EndePage' }
+
     ];
 
   }
