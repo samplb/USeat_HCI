@@ -14,7 +14,6 @@
 
 
 <ion-content padding>
-    <ion-icon name="checkmark-circle"></ion-icon>
     <h1><u>Platzinfos einlesen</u> </h1>
     <div class="QRdiv">
     <button class="QRButton" ion-button icon-left (click)="scan()" color="secondary" outline>
@@ -27,6 +26,6 @@
     <div class="Bestaetigen">
         <button class="BestaetigenB" ion-button (click)="confirm()" color="secondary">Platzbelegung bestätigen</button>
     </div>
-    <p>QR Inhalt:</p>
+    <p>QR Inhalt(als Funktionsbeweis):</p>
     <p>{{qrinfo}}</p>
 </ion-content>

@@ -152,7 +152,7 @@ export class QrCode {
           this.qrinfo=barcodeData.text;
       })
       this.qrActivated=true;
-      this.qrinfo='og1_22';
+      this.qrinfo='hier wäre der BarcodeText';
       this.alert();
       
    }
