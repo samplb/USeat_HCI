@@ -13,10 +13,13 @@ import { AlertController,ToastController } from 'ionic-angular';
 @Component({
   selector: 'page-qr-code',
   templateUrl: 'qr-code.html',
+  
 })
 export class QrCode {
     qrinfo:string;
     qrActivated:boolean;
+    resDate:Date;
+    checkDate:Date;
 
   constructor(private toast:ToastController, private al:AlertController, private scanner:BarcodeScanner, public navCtrl: NavController, public navParams: NavParams) {
       this.qrinfo='Still empty';
@@ -80,11 +83,67 @@ export class QrCode {
           });
       warning.present();
   }
+      this.resDate = new Date();
+      var h = this.resDate.getHours();
+      this.resDate.setHours(h+1);
+      console.log(this.resDate.toString());
   }
   //Bestätigungsbutton. mind. jede Stunde eine bestätigung, ansonsten nicht mehr reserviert. Ideal wäre mit Timer, sodass man weiß wie lange man noch ohne bestätigen sitzen kann.
   //timer gibt es im ionic-framework
   confirm() {
-      
+      if (this.resDate==null){
+          let resDateCheck = this.al.create({
+              title: 'Hinweis',
+              subTitle: 'Noch keine Reservierung gewählt',
+              buttons: ['Ok']
+              
+          });
+      resDateCheck.present();
+      return;
+      }
+      this.checkDate = new Date();
+      console.log(this.checkDate.toString());
+      this.timer();
+  }
+  
+  timer(){
+      var diff = this.resDate.getTime() - this.checkDate.getTime();
+      console.log('Diff:'+diff/60000);
+      var x=diff/60000;
+      if(diff<=0){
+          let warning = this.al.create({
+              title: 'Achtung',
+              subTitle: 'Reservierung abgelaufen!',
+              buttons: ['OK']
+          });
+      warning.present();
+      } else {
+          let checkRes=this.al.create({
+          title: 'Bestätigung',
+          message: 'Reservierung verlängern? Noch ' + x.toFixed(0)+' minutes',
+          buttons: [{
+              text: 'Yes',
+              handler: () => {
+                    let toast = this.toast.create({
+                        message: 'Reservierung verlängert',
+                        duration: 5000,
+                    })
+                    toast.present(toast);
+              }
+          },
+          {
+              text: 'No',
+              handler: () => {
+                  let toast = this.toast.create({
+                        message: 'Verlängerung abgebrochen',
+                        duration: 5000
+                    });
+                    toast.present(toast);
+              }
+          }]
+      });
+      checkRes.present();
+      }
   }
   
   scan() {
