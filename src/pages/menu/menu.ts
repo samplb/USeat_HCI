@@ -5,8 +5,7 @@ import { AuthService } from '../../providers/auth-service';
 /**
  * Generated class for the Menu page.
  *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
+ * Zeigt Buttons mit den möglichen Auswahlchancen für die App. Jeder Button leitet automatisch zur entsprechenden App weiter.
  */
 @IonicPage()
 @Component({

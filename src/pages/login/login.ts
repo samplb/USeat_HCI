@@ -13,8 +13,9 @@ export class Login {
     loading: Loading;
     registerCredentials ={ username: '', password: ''};
 
-  constructor(private nav: NavController, private auth: AuthService, private alertCtrl: AlertController, private loadingCtrl: LoadingController) { }
- 
+  constructor(private nav: NavController, private auth: AuthService, private alertCtrl: AlertController, private loadingCtrl: LoadingController) { 
+  }
+ //Login, prüft am Authservice-provider ob die Anmeldedaten authentisch sind. Wenn Ja wird man automatisch zum Menü weitergeletiet, ansonsten ERror.
     public login() {
         this.showLoading()
         this.auth.login(this.registerCredentials).subscribe(allowed => {

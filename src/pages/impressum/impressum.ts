@@ -4,8 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 /**
  * Generated class for the Impressum page.
  *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
+ * Generelle Infos zum Projekt und dem Team.
  */
 @IonicPage()
 @Component({

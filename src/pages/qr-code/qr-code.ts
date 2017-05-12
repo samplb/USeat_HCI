@@ -8,6 +8,7 @@ import { AlertController,ToastController } from 'ionic-angular';
  * Generated class for the QrCode page.
  *
  * See https://www.thepolyglotdeveloper.com/2016/02/add-barcode-scanning-functionality-to-your-ionic-2-app/
+ * 
  */
 @IonicPage()
 @Component({
@@ -20,7 +21,7 @@ export class QrCode {
     qrActivated:boolean;
     resDate:Date;
     checkDate:Date;
-
+    
   constructor(private toast:ToastController, private al:AlertController, private scanner:BarcodeScanner, public navCtrl: NavController, public navParams: NavParams) {
       this.qrinfo='Still empty';
       this.qrActivated=false;
@@ -88,8 +89,7 @@ export class QrCode {
       this.resDate.setHours(h+1);
       console.log(this.resDate.toString());
   }
-  //Bestätigungsbutton. mind. jede Stunde eine bestätigung, ansonsten nicht mehr reserviert. Ideal wäre mit Timer, sodass man weiß wie lange man noch ohne bestätigen sitzen kann.
-  //timer gibt es im ionic-framework
+  //Bestätigungsbutton.  jede Stunde eine bestätigung, ansonsten nicht mehr reserviert. Nach jeder Bestätigung wird der Timer wieder auf 0 gesetzt.
   confirm() {
       if (this.resDate==null){
           let resDateCheck = this.al.create({
@@ -102,10 +102,9 @@ export class QrCode {
       return;
       }
       this.checkDate = new Date();
-      console.log(this.checkDate.toString());
       this.timer();
   }
-  
+  //Prüft wie viel Zeit noch bis zum Ablauf der Reservierung ist. WEnn Zeit abgelaufen, würde die Reservierung automatisch gelöscht werden. HIER: einfacher Alert.
   timer(){
       var diff = this.resDate.getTime() - this.checkDate.getTime();
       console.log('Diff:'+diff/60000);
@@ -142,17 +141,18 @@ export class QrCode {
               }
           }]
       });
+      this.resDate=new Date();
       checkRes.present();
       }
   }
-  
+  //ruft den Barcodescanner auf und speichert den Text. der einfachheit halber wird der Text dennoch mit Beispieltext überschrieben. TestQR code im Projektordner.
   scan() {
+      this.qrinfo='hier wäre der BarcodeText';
       this.scanner.scan().then((barcodeData) => {
           console.log(barcodeData.text);
           this.qrinfo=barcodeData.text;
       })
       this.qrActivated=true;
-      this.qrinfo='hier wäre der BarcodeText';
       this.alert();
       
    }

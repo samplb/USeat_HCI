@@ -4,8 +4,7 @@ import { Chart } from 'chart.js';
 
 /**
  * Generated class for the Belegung page.
- *
- * See https://www.joshmorony.com/adding-responsive-charts-graphs-to-ionic-2-applications/
+ * Page mit Tabs. Zeigt mit Hilfe eines Doughnutcharts die Belegungen Gesamt und die verschiedenen Stockwerke an.
  */
 @IonicPage()
 @Component({
@@ -23,22 +22,22 @@ export class Belegung {
     doughnutChart_Bib:any;
     doughnutChart_Og2:any;
     doughnutChart_Ges:any;
-    
+    //Daten Gesamt
     free_slots_Ges:number;
     reserved_slots_Ges:number;
     used_slots_Ges:number;
     sumup_Ges:number;
-    
+    //Daten OG1
     free_slots_Og1:number;
     reserved_slots_Og1:number;
     used_slots_Og1:number;
     sumup_Og1:number;
-    
+    //Daten OG2
     free_slots_Og2:number;
     reserved_slots_Og2:number;
     used_slots_Og2:number;
     sumup_Og2:number;
-    
+    //Daten Bibliothek
     free_slots_Bib:number;
     reserved_slots_Bib:number;
     used_slots_Bib:number;
@@ -53,6 +52,7 @@ export class Belegung {
   ionViewWillEnter() {
 		this.slides.update();
 	}
+        //erzeugt die Charts mit Hardgecodeten Daten. ANsonsten wäre es eine einfache sql abfrage.
   createChart(){
       this.free_slots_Ges=200;
         this.reserved_slots_Ges=50;

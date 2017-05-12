@@ -4,8 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 /**
  * Generated class for the SearchPage page.
  *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
+ * Listet alle Optionen zur Reservierung auf.
  */
 @IonicPage()
 @Component({

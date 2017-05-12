@@ -20,7 +20,7 @@ export class MyApp {
       splashScreen.hide();
     });
     
-    //gets storage ready:https://ionicframework.com/docs/storage/
+    //gets storage ready:https://ionicframework.com/docs/storage/  -BeispielDaten für Reservierung.
       storage.ready().then(() => {
           storage.set('og1_23',0);
           storage.set('og1_24',0);
@@ -45,7 +45,7 @@ export class MyApp {
           storage.set('og1_30',0);
       })
 
-    // used for an example of ngFor and navigation
+    // Pages
     this.pages = [
       { title: 'Menü', component: 'Menu' },
       { title: 'QR-Code', component: 'QrCode' },

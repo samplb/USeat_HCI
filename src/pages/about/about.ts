@@ -4,8 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 /**
  * Generated class for the About page.
  *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
+ * Juast a small page with general Information.
  */
 @IonicPage()
 @Component({

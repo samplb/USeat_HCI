@@ -6,6 +6,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  *
  * https://ionicframework.com/docs/components/#toggle
  * https://ionicframework.com/docs/components/#range
+ * Einfache Settings-Page mit Beispieleinstellungen.
  */
 @IonicPage()
 @Component({

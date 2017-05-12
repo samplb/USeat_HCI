@@ -7,6 +7,7 @@ import { Storage } from '@ionic/storage';
  * Generated class for the Reservierung page.
  *
  * http://ionicframework.com/docs/components/#datetime
+ * Übernimmt die Eingabedaten des Users und sucht nach passenden Daten.
  */
 @IonicPage()
 @Component({
@@ -33,7 +34,7 @@ export class Reservierung {
                 public navCtrl: NavController, 
                 public navParams: NavParams) {
                 
-      console.log('enter constructor');
+    /*  console.log('enter constructor');
       //this.val=0;
      // if(this.val==0) {
           storage.ready().then(() => {
@@ -54,7 +55,7 @@ export class Reservierung {
           }});
       })
     //gets storage ready:https://ionicframework.com/docs/storage/
-    //  } 
+    //  } */
   }
 
   ionViewDidLoad() {

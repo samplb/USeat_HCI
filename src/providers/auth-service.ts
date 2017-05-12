@@ -3,9 +3,9 @@ import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 import {Observable} from 'rxjs/Observable';
 
-/*
- User template mit Namen und Matrikelnummer
-*/
+/**
+ * Provider der die Validität der eingegebenen Nutzerdaten prüft. Wäre ein Realität eine Anbindung zu einem Uniserver mit USpace Nutzerdaten.
+ */
 export class User {
     username:string;
     matnr:string;
@@ -17,7 +17,7 @@ export class User {
 }
 
 /*
- * AuthService checkt validät der eingaben von login.
+ * AuthService checkt validität der eingaben von login.
  */
 @Injectable()
 export class AuthService {
